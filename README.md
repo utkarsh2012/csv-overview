@@ -5,6 +5,7 @@ Get the vital statistics of a CSV file.
 
 For example (from the NYPL menu's database):
 
+	$ csv-overview some/path/Dish.csv
 	Dish.csv
 	351769 entries
 		(0) id: 351769 unique (100.00%)
