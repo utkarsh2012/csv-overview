@@ -4,6 +4,7 @@ csv-overview
 Get the vital statistics of a CSV file.
 
 You can install with:
+
 	$ pip install csv_overview
 
 For example (from the NYPL menu's database):
