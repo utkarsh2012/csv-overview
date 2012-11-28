@@ -79,4 +79,8 @@ def run(path):
 	f.close()
 
 if __name__ == '__main__':
-	run(sys.argv[1])
+	if len(sys.argv) < 2 or (len(sys.argv) >= 2 and sys.argv[1] in ['help', '-h', '--help']):
+		print 'Usage:'
+		print '\tcsv-overview data.csv'
+	else:
+		run(sys.argv[1])
