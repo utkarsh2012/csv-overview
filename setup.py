@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='csv_overview',
-      version='0.2',
+      version='0.31',
       description='Get the vital statistics of a CSV file',
       long_description=open('readme.md', 'rb').read(),
       url='http://github.com/sbirch/csv-overview',
