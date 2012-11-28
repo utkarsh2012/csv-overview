@@ -7,7 +7,7 @@ try:
 except:
 	pass
 
-def run(path):
+def process(path):
 	f = open(path, 'rb')
 	filename = os.path.basename(path)
 	filename_pure = filename.rsplit('.',1)[0]
@@ -78,9 +78,12 @@ def run(path):
 
 	f.close()
 
-if __name__ == '__main__':
-	if len(sys.argv) < 2 or (len(sys.argv) >= 2 and sys.argv[1] in ['help', '-h', '--help']):
+def run(args):
+	if len(args) < 2 or (len(args) >= 2 and args[1] in ['help', '-h', '--help']):
 		print 'Usage:'
 		print '\tcsv-overview data.csv'
 	else:
-		run(sys.argv[1])
+		run(args[1])
+
+if __name__ == '__main__':
+	run(sys.argv)
