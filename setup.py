@@ -3,7 +3,7 @@ from setuptools import setup
 setup(name='csv_overview',
       version='0.32',
       description='Get the vital statistics of a CSV file',
-      long_description=open('readme.md', 'rb').read(),
+      long_description=open('README.md', 'rb').read(),
       url='http://github.com/sbirch/csv-overview',
       classifiers=['License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 2.7',
