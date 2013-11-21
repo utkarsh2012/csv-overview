@@ -83,7 +83,7 @@ def run(args):
 		print 'Usage:'
 		print '\tcsv-overview data.csv'
 	else:
-		run(args[1])
+		process(args[1])
 
 if __name__ == '__main__':
 	run(sys.argv)
